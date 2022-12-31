@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+:root{
+  --c : #38023B;
+  --c2 : #A288E3;
+  --c3 : #BBD5ED;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  background-color: var(--c);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.start{
+  padding-top: 6em !important;
+}
+#land{
+  height: fit-content;
+  background-color: #38023B;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#land .avatar{
+  width: 20vw;
+}
+
+#land .name {
+  font-size: 50px;
+  font-weight: 500;
+  color: #A288E3;
+}
+
+#land .job{
+  font-size: 40px;
+  font-weight: 400;
+  color: #A288E3;
+}
+
+#land .bio{
+  color: #BBD5ED;
+  line-height: 2;
+}
+
+.heading{
+  color: #38023B;
+  font-weight: 700;
+}
+
+.project{
+  width: 100%;
+  height: fit-content;
+  border: 1px solid var(--c);
+  position: relative;
+}
+.project .project-info{
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  z-index: 1;
+  background-color: #BBD5ED;
+  bottom: 0;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.project:hover > .project-info{
+  opacity: 1;
+}
+
+.liked{
+  color: red;
+}
+.project-info i{
+  font-size: 6vh;
+  transition: 0.4s;
+}
+.project-info i:active{
+  transform: scale(1.1);
+  font-size: 10vh;
+}
+.project-img{
+  width: 100%;
+}
+
+#contact .form-control{
+  border-bottom: 2px solid var(--c);
+}
+
+#contact .submit-btn{
+  background-color: #38023B;
+  color: #BBD5ED;
+}
+
+#contact form{
+  width: 60%;
+}
+
+.contact-body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:center;
 }
 
-.App-link {
-  color: #61dafb;
+.so-holder{
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.so-holder .link-s {
+  text-decoration: none;
+  color: #A288E3;
+  font-size: 5vh;
+  transition: 0.4s;
+  padding: 0 1em !important;
+}
+.so-holder .link-s:hover{
+  color: #BBD5ED;
 }
